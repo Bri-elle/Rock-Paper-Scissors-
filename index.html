@@ -5,11 +5,71 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Rock Paper Scissors</title>
 		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-	</head>
-	<body>
-		<h1>Hello World!</h1>
-		<h4>I am a Rock Paper Scissors Console Game</h4>
 
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="src/output.css" />
+	</head>
+	<body class="bg-white h-screen">
+		<header>
+			<h1 class="font-Philosopher text-8xl text-center my-20">
+				<span class="text-lime-400"> Rock </span>
+				<span class="text-pink-600">Paper </span>
+				<span class="text-fuchsia-600"> Scissors </span>
+			</h1>
+		</header>
+		<main class="w-full h-1/2 grid content-center  border-2 ">
+			<div id="humanChoiceMenu" class="flex place-content-center">
+				<button
+					id="rock"
+					class="border-solid border-2 border-stone-800 px-6 py-3 rounded-md"
+				>
+					<img src="fist.svg" alt="fist icon" class="inline-block" />
+					Rock
+				</button>
+				<button
+					id="paper"
+					class="border-solid border-2 border-stone-800 px-6 py-3 rounded-md"
+				>
+					<img
+						src="paper.svg"
+						alt="hand paper icon"
+						class="inline-block text-lime-400"
+					/>
+					Paper
+				</button>
+				<button
+					id="scissors"
+					class="border-solid border-2 border-stone-800 px-6 py-3 rounded-md"
+				>
+					<img
+						src="scissors.svg"
+						alt="hands in the form of scissors icon"
+						class="inline-block"
+					/>
+					Scissors
+				</button>
+			</div>
+
+			<div id="scoreBoard" class="my-5 text-center text-fuchsia-800">
+				<p id="choices" '></p>
+				<p id="result" class=" text-2xl"></p>
+				<p id="scores" class="absolute top-10 right-10 text-fuchsia-800">
+					Score:
+				</p>
+			</div>
+		
+		</main>
 		<!-- Script Tag -->
 		<script src="script.js"></script>
 	</body>
